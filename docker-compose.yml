@@ -21,6 +21,10 @@ services:
       MYSQL_DATABASE: myappdb
       MYSQL_USER: myapp
       MYSQL_PASSWORD: myapp1234
+      TZ: Asia/Bangkok
+      LANG: C.UTF-8
+      MYSQL_ROOT_HOST: "%"
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
       - ./init_scripts:/docker-entrypoint-initdb.d
 
