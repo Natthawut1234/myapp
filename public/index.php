@@ -115,7 +115,7 @@ include __DIR__ . '/../templates/header.php';
             <th class="text-center">คงเหลือ</th>
             <th class="text-end">ราคา</th>
             <th>หมดอายุ</th>
-            <th class="text-end">จัดการ</th>
+            <!-- <th class="text-end">จัดการ</th> -->
           </tr>
         </thead>
         <tbody>
@@ -137,10 +137,10 @@ include __DIR__ . '/../templates/header.php';
             </td>
             <td class="text-end">฿<?= number_format((float)$p['price'], 2) ?></td>
             <td><?= $p['expiry_date'] ?: '-' ?></td>
-            <td class="text-end">
+            <!-- <td class="text-end">
               <a href="edit_product.php?id=<?= $p['id'] ?>" class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil-square"></i></a>
               <a href="delete_product.php?id=<?= $p['id'] ?>" class="btn btn-sm btn-outline-danger" onclick="return confirm('ลบสินค้า?');"><i class="bi bi-trash"></i></a>
-            </td>
+            </td> -->
           </tr>
         <?php endforeach; endif; ?>
         </tbody>
