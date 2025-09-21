@@ -1,0 +1,2 @@
+# Simple .htaccess for PHP application
+DirectoryIndex index.php

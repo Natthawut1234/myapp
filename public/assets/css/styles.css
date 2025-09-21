@@ -1,0 +1,8 @@
+:root { --card-radius: 16px; }
+body { background-color:#f5f7fb; }
+.card { border:0; border-radius:var(--card-radius); box-shadow:0 6px 20px rgba(0,0,0,0.06); }
+.stat-card .icon {
+  font-size: 1.75rem; opacity: .8;
+}
+.table thead th { background:#f1f4f9; }
+.badge-soft { background: #eef2ff; color:#4353ff; }
